@@ -6,6 +6,7 @@
 package Bean;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -69,6 +70,26 @@ public class Personne implements Serializable {
         this.prenom = prenom;
     }
 
+    private Date dateNaissance;
+
+    /**
+     * Get the value of dateNaissance
+     *
+     * @return the value of dateNaissance
+     */
+    public Date getDateNaissance() {
+        return dateNaissance;
+    }
+
+    /**
+     * Set the value of dateNaissance
+     *
+     * @param dateNaissance new value of dateNaissance
+     */
+    public void setDateNaissance(Date dateNaissance) {
+        this.dateNaissance = dateNaissance;
+    }
+
     private String sexe;
 
     /**
@@ -128,6 +149,27 @@ public class Personne implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+    
+    private String adresse;
+
+    /**
+     * Get the value of adresse
+     *
+     * @return the value of adresse
+     */
+    public String getAdresse() {
+        return adresse;
+    }
+
+    /**
+     * Set the value of adresse
+     *
+     * @param adresse new value of adresse
+     */
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
 
 
 
